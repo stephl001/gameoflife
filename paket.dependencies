@@ -1,0 +1,8 @@
+source https://www.nuget.org/api/v2/
+
+nuget FsCheck.Xunit
+nuget FSharp.Core
+nuget FsUnit.XUnit
+nuget System.ValueTuple >= 4.4.0 restriction: >= net462
+nuget xunit
+nuget xunit.runner.visualstudio
