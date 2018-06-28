@@ -6,15 +6,15 @@
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>46d18f12-35b6-4769-895f-df93260e0302</ProjectGuid>
+    <ProjectGuid>62c3a839-d6ff-4e38-87b5-df8847278a3b</ProjectGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>GameOfLife.Tests</RootNamespace>
-    <AssemblyName>GameOfLife.Tests</AssemblyName>
+    <RootNamespace>GameOfLife.Common.Tests</RootNamespace>
+    <AssemblyName>GameOfLife.Common.Tests</AssemblyName>
     <UseStandardResourceNames>true</UseStandardResourceNames>
     <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
     <TargetFSharpCoreVersion>4.4.3.0</TargetFSharpCoreVersion>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <Name>GameOfLife.Tests</Name>
+    <Name>GameOfLife.Common.Tests</Name>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -88,8 +88,7 @@
   <Import Project="..\packages\Microsoft.NET.Test.Sdk\build\$(__paket__Microsoft_Net_Test_Sdk_props).props" Condition="Exists('..\packages\Microsoft.NET.Test.Sdk\build\$(__paket__Microsoft_Net_Test_Sdk_props).props')" Label="Paket" />
   <ItemGroup>
     <Compile Include="AssemblyInfo.fs" />
-    <Compile Include="PureTerminalInterpreter.fs" />
-    <Compile Include="Application.fs" />
+    <Compile Include="Library1.fs" />
     <None Include="Script.fsx" />
     <Content Include="paket.references" />
   </ItemGroup>
@@ -98,18 +97,6 @@
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Numerics" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\GameOfLife.Common\GameOfLife.Common.fsproj">
-      <Name>GameOfLife.Common</Name>
-      <Project>{c27556d5-ce67-46a1-99cb-7fb826018c1a}</Project>
-      <Private>True</Private>
-    </ProjectReference>
-    <ProjectReference Include="..\GameOfLife\GameOfLife.fsproj">
-      <Name>GameOfLife</Name>
-      <Project>{c9a326db-5d34-4064-99a1-48b3c07eb235}</Project>
-      <Private>True</Private>
-    </ProjectReference>
   </ItemGroup>
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

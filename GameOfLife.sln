@@ -14,6 +14,10 @@ Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "GameOfLife.Common", "GameOf
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "GameOfLife.Tests", "GameOfLife.Tests\GameOfLife.Tests.fsproj", "{46D18F12-35B6-4769-895F-DF93260E0302}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "GameOfLife.Common.Tests", "GameOfLife.Common.Tests\GameOfLife.Common.Tests.fsproj", "{62C3A839-D6FF-4E38-87B5-DF8847278A3B}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{E16781D0-C750-40AC-A0C4-A426388B26B3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -32,9 +36,17 @@ Global
 		{46D18F12-35B6-4769-895F-DF93260E0302}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{46D18F12-35B6-4769-895F-DF93260E0302}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{46D18F12-35B6-4769-895F-DF93260E0302}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62C3A839-D6FF-4E38-87B5-DF8847278A3B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62C3A839-D6FF-4E38-87B5-DF8847278A3B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62C3A839-D6FF-4E38-87B5-DF8847278A3B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62C3A839-D6FF-4E38-87B5-DF8847278A3B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{46D18F12-35B6-4769-895F-DF93260E0302} = {E16781D0-C750-40AC-A0C4-A426388B26B3}
+		{62C3A839-D6FF-4E38-87B5-DF8847278A3B} = {E16781D0-C750-40AC-A0C4-A426388B26B3}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {259DA370-EE00-4815-B072-9E33B9921660}
